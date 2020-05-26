@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.utils.Json;
 import games.emgflappy.project.EMGflappy.EMGflappy;
@@ -112,7 +113,14 @@ public class FlappyObstacle extends FlappyObject {
     public void onViewPortChanged(float ViewPortSizeX, float ViewPortSizeY) {
         float width = ViewPortSizeX * getObstacleWidthScale(obstacleType);
         shape.setAsBox(width * 0.5f, height * 0.5f);
+        boolean sensor = fixtureDef.isSensor;
+        body.destroyFixture(body.getFixtureList().first());
+        fixtureDef = new FixtureDef();
+        fixtureDef.shape = shape;
+        fixtureDef.isSensor = sensor;
+        body.createFixture(fixtureDef);
         sprite.setSize(width, height);
+        body.setTransform(coordinateTransform(new Vector2(x, y)), body.getAngle());
     }
 
     /**

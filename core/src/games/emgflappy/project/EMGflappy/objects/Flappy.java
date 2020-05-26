@@ -8,6 +8,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef;
+import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.utils.Json;
 import games.emgflappy.project.EMGflappy.EMGflappy;
@@ -207,6 +208,14 @@ public class Flappy extends FlappyObject {
         float height = ViewPortSizeY * Flappy.FlappySize;
         shape.setAsBox(width * 0.5f, height * 0.5f);
         for (Sprite sprite : sprites) sprite.setSize(width, height);
+        fixtureDef = new FixtureDef();
+        fixtureDef.shape = shape;
+        fixtureDef.density = Flappy.FlappyDensity;
+        fixtureDef.friction = Flappy.FlappyFriction;
+        fixtureDef.restitution = Flappy.FlappyRestitution;
+        body.destroyFixture(body.getFixtureList().first());
+        body.createFixture(fixtureDef);
+        body.setTransform(coordinateTransform(new Vector2(x, y)), body.getAngle());
     }
 
     @Override
