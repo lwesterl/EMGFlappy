@@ -19,13 +19,13 @@ Notes:
 ***The following instructions are for Android Studio (based on [libGDX wiki](https://github.com/libgdx/libgdx/wiki/Gradle-and-Intellij-IDEA))***
 
 1. Create a Desktop run profile
- 1. Click "Run" (top navigation bar)
- 2. Select "Edit Configurations..." from the dropdown menu
- 3. Click "+" symbol which is in the top left corner of the popup dialog
- 4. Select "Application" from the dropdown menu
- 5. Set "Name": ***Desktop***
- 6. Set "Main class": ***games.emgflappy.project.desktop.DesktopLauncher***
- 7. Click "Ok"
+   1. Click "Run" (top navigation bar)
+   2. Select "Edit Configurations..." from the dropdown menu
+   3. Click "+" symbol which is in the top left corner of the popup dialog
+   4. Select "Application" from the dropdown menu
+   5. Set "Name": ***Desktop***
+   6. Set "Main class": ***games.emgflappy.project.desktop.DesktopLauncher***
+   7. Click "Ok"
 2. Select "Desktop" as the run profile, defaults to "android"
 3. Run application normally (just like Android application)
 
@@ -36,7 +36,7 @@ Notes:
 ### Web, HTML
 1. Navigate to the base directory of the project: EMGFlappy/
 2. Start the development server setup <br>&ensp;Linux: ```./gradlew html:superDev ``` <br>&ensp;Windows:  ``` gradlew html:superDev```
-3. Browse ```http://localhost:8080/index.html```
+3. Browse to ```http://localhost:8080/index.html```
 
 
 ### iOS
