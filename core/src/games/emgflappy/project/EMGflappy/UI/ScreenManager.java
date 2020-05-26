@@ -114,7 +114,6 @@ public final class ScreenManager {
             if (ScreenManager.screen != null) ScreenManager.screen.dispose();
             ScreenManager.screen = new EndScreen();
             game.setScreen(ScreenManager.screen);
-            game.finishGame();
         }
     }
 

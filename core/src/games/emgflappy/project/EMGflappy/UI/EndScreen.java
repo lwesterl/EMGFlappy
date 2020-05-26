@@ -61,7 +61,7 @@ public class EndScreen extends AbstractScreen {
         Gdx.input.setInputProcessor(stage);
         Table table = new Table(skin);
 
-        Label label = new Label("Workout completed", skin, "bigLabel");
+        Label label = new Label("Game over", skin, "bigLabel");
         label.setPosition(AbstractScreen.ViewportWidth * 0.5f - label.getPrefWidth() * 0.5f,
                 AbstractScreen.ViewportHeight - label.getPrefHeight());
 

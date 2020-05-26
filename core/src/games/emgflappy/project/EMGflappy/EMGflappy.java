@@ -2,6 +2,7 @@ package games.emgflappy.project.EMGflappy;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL20;
@@ -186,6 +187,7 @@ public class EMGflappy extends Game implements InputProcessor {
 		camera.update();
 		flappyWorld.onViewPortChanged(ViewPortSizeX, ViewPortSizeY);
 		hud.onViewPortChanged(ViewPortSizeX, ViewPortSizeY);
+		if (getScreen() != null) screen.resize(width, height);
 	}
 
 	/**
@@ -223,6 +225,7 @@ public class EMGflappy extends Game implements InputProcessor {
 				flappyWorld.extendWorld(WorldWidth, ViewPortSizeX, ViewPortSizeY);
 		} else Flappy.setFlappyPressed(false);
 		int hp = flappyWorld.getFlappyHP();
+		if (hp <= 0 && getScreen() == null) ScreenManager.showEndScreen();
 		hud.draw(batch, hp, Flappy.getMaxFlappyHP());
 		ScreenManager.renderScreen();
 	}
@@ -241,15 +244,7 @@ public class EMGflappy extends Game implements InputProcessor {
 		FlappyAudio.disposeAudio();
 	}
 
-	/**
-	 * Get how many times Flappy has hit an obstacle
-	 * @return FlappyWorld.getFlappyHits (this in only a wrapper)
-	 */
-	public int getFlappyHits() {
-		return flappyWorld.getFlappyHits();
-	}
-
-	// Input processing: on emulator touch input is used to control Flappy
+	// Input processing
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
@@ -263,6 +258,16 @@ public class EMGflappy extends Game implements InputProcessor {
 		return true;
 	}
 
+	@Override
+	public boolean keyDown(int keycode) {
+		if (keycode == Input.Keys.ESCAPE || keycode == Input.Keys.BACKSPACE) {
+			pause();
+			return true;
+		}
+		return false;
+	}
+
+
 	/** Not implemented but must be overridden */
 
 	@Override
@@ -272,11 +277,6 @@ public class EMGflappy extends Game implements InputProcessor {
 
 	@Override
 	public boolean mouseMoved(int screenX, int screenY) {
-		return false;
-	}
-
-	@Override
-	public boolean keyDown(int keycode) {
 		return false;
 	}
 

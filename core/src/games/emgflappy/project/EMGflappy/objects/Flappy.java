@@ -28,7 +28,7 @@ public class Flappy extends FlappyObject {
 
     private static boolean FlappyPressed = false; /** When FlappyPressed is set to true force is applied to Flappy */
     private static float FlappySize = 0.08f; /** Scale of the flappy texture (used for width and height) relating to ViewPortSize @see EMGFlappy */
-    private static int FlappyHP = Integer.MAX_VALUE; // How many hit points Flappy has (set this to MAX_VALUE for 'never ending' game loop)
+    private static int FlappyHP = 50; // How many hit points Flappy has (set this to MAX_VALUE for 'never ending' game loop)
     private static int CollisionDamage = 10; // How much damage is caused colliding with another object
     private static float CollisionDamageInterval = 1.f; // How often (in seconds) further damage is caused when collision continues
     private static float AnimationLength = 0.33f * CollisionDamageInterval; // How long the animation is (generally good idea to keep it < CollisionDamageInterval)
