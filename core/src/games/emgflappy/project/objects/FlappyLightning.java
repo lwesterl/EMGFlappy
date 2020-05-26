@@ -1,9 +1,9 @@
-package games.emgflappy.project.EMGflappy.objects;
+package games.emgflappy.project.objects;
 
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import games.emgflappy.project.EMGflappy.audio.AudioType;
-import games.emgflappy.project.EMGflappy.audio.FlappyAudio;
+import games.emgflappy.project.audio.AudioType;
+import games.emgflappy.project.audio.FlappyAudio;
 
 /**
  * FlappyObstacles that use lightning texture and which are Tunnels in ObstacleType

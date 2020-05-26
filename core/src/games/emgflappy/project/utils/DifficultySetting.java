@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.utils;
+package games.emgflappy.project.utils;
 
 /**
  * Enum which holds game difficulty setting (mapping between enum values, ints and floats)

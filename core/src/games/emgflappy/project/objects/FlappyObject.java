@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.objects;
+package games.emgflappy.project.objects;
 
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;

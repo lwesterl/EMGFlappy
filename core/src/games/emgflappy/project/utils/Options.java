@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.utils;
+package games.emgflappy.project.utils;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;

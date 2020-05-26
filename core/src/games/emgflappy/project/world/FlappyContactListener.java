@@ -1,15 +1,15 @@
-package games.emgflappy.project.EMGflappy.world;
+package games.emgflappy.project.world;
 
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.Contact;
 import com.badlogic.gdx.physics.box2d.ContactImpulse;
 import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Manifold;
-import games.emgflappy.project.EMGflappy.objects.Flappy;
-import games.emgflappy.project.EMGflappy.objects.FlappyObject;
-import games.emgflappy.project.EMGflappy.objects.FlappyObstacle;
-import games.emgflappy.project.EMGflappy.objects.ObjectType;
-import games.emgflappy.project.EMGflappy.utils.Pair;
+import games.emgflappy.project.objects.Flappy;
+import games.emgflappy.project.objects.FlappyObject;
+import games.emgflappy.project.objects.FlappyObstacle;
+import games.emgflappy.project.objects.ObjectType;
+import games.emgflappy.project.utils.Pair;
 
 /**
  * Contact listener for FlappyWorld

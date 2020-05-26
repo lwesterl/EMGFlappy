@@ -6,7 +6,7 @@ import org.robovm.apple.uikit.UIApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
 
-import games.emgflappy.project.EMGflappy.EMGflappy;
+import games.emgflappy.project.EMGflappy;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override

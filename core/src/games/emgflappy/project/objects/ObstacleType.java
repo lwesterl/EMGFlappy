@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.objects;
+package games.emgflappy.project.objects;
 
 import java.util.HashMap;
 import java.util.Map;

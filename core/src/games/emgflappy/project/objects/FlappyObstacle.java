@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.objects;
+package games.emgflappy.project.objects;
 
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
@@ -7,10 +7,10 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.utils.Json;
-import games.emgflappy.project.EMGflappy.EMGflappy;
-import games.emgflappy.project.EMGflappy.FlappyTextures;
+import games.emgflappy.project.EMGflappy;
+import games.emgflappy.project.FlappyTextures;
 
-import static games.emgflappy.project.EMGflappy.objects.ObstacleType.getObstacleWidthScale;
+import static games.emgflappy.project.objects.ObstacleType.getObstacleWidthScale;
 
 
 /**

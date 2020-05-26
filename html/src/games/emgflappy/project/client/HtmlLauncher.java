@@ -4,7 +4,7 @@ import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
 
-import games.emgflappy.project.EMGflappy.EMGflappy;
+import games.emgflappy.project.EMGflappy;
 
 public class HtmlLauncher extends GwtApplication {
 

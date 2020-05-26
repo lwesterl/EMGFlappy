@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.objects;
+package games.emgflappy.project.objects;
 
 /**
  * Specifies Object type for object created in FlappyWorld

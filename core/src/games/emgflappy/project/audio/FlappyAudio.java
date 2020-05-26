@@ -1,9 +1,9 @@
-package games.emgflappy.project.EMGflappy.audio;
+package games.emgflappy.project.audio;
 
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Sound;
-import games.emgflappy.project.EMGflappy.utils.Options;
+import games.emgflappy.project.utils.Options;
 
 import java.util.HashMap;
 import java.util.Map;

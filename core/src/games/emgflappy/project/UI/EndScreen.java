@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.UI;
+package games.emgflappy.project.UI;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Camera;
@@ -12,8 +12,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import games.emgflappy.project.EMGflappy.EMGflappy;
-import games.emgflappy.project.EMGflappy.FlappyTextures;
+import games.emgflappy.project.EMGflappy;
+import games.emgflappy.project.FlappyTextures;
 
 
 /**

@@ -1,8 +1,8 @@
-package games.emgflappy.project.EMGflappy.UI;
+package games.emgflappy.project.UI;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
-import games.emgflappy.project.EMGflappy.EMGflappy;
+import games.emgflappy.project.EMGflappy;
 
 /**
  * A static class which handles communication between different screens

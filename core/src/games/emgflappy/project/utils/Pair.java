@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.utils;
+package games.emgflappy.project.utils;
 
 /**
  * Pair class which holds two Objects

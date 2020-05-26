@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.UI;
+package games.emgflappy.project.UI;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -12,8 +12,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.ui.TextButton;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import games.emgflappy.project.EMGflappy.utils.DifficultySetting;
-import games.emgflappy.project.EMGflappy.utils.Options;
+import games.emgflappy.project.utils.DifficultySetting;
+import games.emgflappy.project.utils.Options;
 
 /**
  * Screen for showing an options menu

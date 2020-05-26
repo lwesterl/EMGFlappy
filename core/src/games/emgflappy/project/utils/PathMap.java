@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.utils;
+package games.emgflappy.project.utils;
 
 /**
  * Class which maps Flappy's y position and obstacle y positions (basically a 3D vector)

@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy;
+package games.emgflappy.project;
 
 
 import com.badlogic.gdx.graphics.Camera;

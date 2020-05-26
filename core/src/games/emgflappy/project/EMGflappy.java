@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy;
+package games.emgflappy.project;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -11,11 +11,11 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
-import games.emgflappy.project.EMGflappy.UI.ScreenManager;
-import games.emgflappy.project.EMGflappy.audio.FlappyAudio;
-import games.emgflappy.project.EMGflappy.objects.Flappy;
-import games.emgflappy.project.EMGflappy.utils.Options;
-import games.emgflappy.project.EMGflappy.world.FlappyWorld;
+import games.emgflappy.project.UI.ScreenManager;
+import games.emgflappy.project.audio.FlappyAudio;
+import games.emgflappy.project.objects.Flappy;
+import games.emgflappy.project.utils.Options;
+import games.emgflappy.project.world.FlappyWorld;
 
 import java.util.Collection;
 import java.util.Deque;

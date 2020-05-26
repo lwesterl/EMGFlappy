@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.world;
+package games.emgflappy.project.world;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -14,15 +14,15 @@ import com.badlogic.gdx.utils.Json;
 import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
 import com.badlogic.gdx.utils.Timer;
-import games.emgflappy.project.EMGflappy.objects.BoundaryObject;
-import games.emgflappy.project.EMGflappy.objects.Flappy;
-import games.emgflappy.project.EMGflappy.objects.FlappyLightning;
-import games.emgflappy.project.EMGflappy.objects.FlappyObject;
-import games.emgflappy.project.EMGflappy.objects.FlappyObstacle;
-import games.emgflappy.project.EMGflappy.objects.ObjectType;
-import games.emgflappy.project.EMGflappy.objects.ObstacleType;
-import games.emgflappy.project.EMGflappy.utils.Options;
-import games.emgflappy.project.EMGflappy.utils.Pair;
+import games.emgflappy.project.objects.BoundaryObject;
+import games.emgflappy.project.objects.Flappy;
+import games.emgflappy.project.objects.FlappyLightning;
+import games.emgflappy.project.objects.FlappyObject;
+import games.emgflappy.project.objects.FlappyObstacle;
+import games.emgflappy.project.objects.ObjectType;
+import games.emgflappy.project.objects.ObstacleType;
+import games.emgflappy.project.utils.Options;
+import games.emgflappy.project.utils.Pair;
 
 import java.util.Random;
 

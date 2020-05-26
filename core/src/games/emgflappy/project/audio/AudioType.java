@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.audio;
+package games.emgflappy.project.audio;
 
 import java.util.HashMap;
 import java.util.Map;

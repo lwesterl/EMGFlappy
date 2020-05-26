@@ -1,4 +1,4 @@
-package games.emgflappy.project.EMGflappy.objects;
+package games.emgflappy.project.objects;
 
 
 import com.badlogic.gdx.graphics.Texture;
@@ -11,11 +11,11 @@ import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.utils.Json;
-import games.emgflappy.project.EMGflappy.EMGflappy;
-import games.emgflappy.project.EMGflappy.FlappyTextures;
-import games.emgflappy.project.EMGflappy.UI.ScreenManager;
-import games.emgflappy.project.EMGflappy.audio.AudioType;
-import games.emgflappy.project.EMGflappy.audio.FlappyAudio;
+import games.emgflappy.project.EMGflappy;
+import games.emgflappy.project.FlappyTextures;
+import games.emgflappy.project.UI.ScreenManager;
+import games.emgflappy.project.audio.AudioType;
+import games.emgflappy.project.audio.FlappyAudio;
 
 public class Flappy extends FlappyObject {
 
