@@ -62,7 +62,7 @@ public class EMGflappy extends Game implements InputProcessor {
 				textures.put(entry.getKey(), new Texture(Gdx.files.internal(entry.getValue())));
 			}
 		} catch (RuntimeException e) {
-			System.exit(-1);
+			Gdx.app.exit();
 		}
 	}
 
@@ -113,7 +113,7 @@ public class EMGflappy extends Game implements InputProcessor {
 		if (Options.getInstance().FixViewPortSizes) ViewPortSizeX = EMGflappy.ViewPortSizeXWhenFixed;
 		flappyWorld =  new FlappyWorld(ViewPortSizeX, ViewPortSizeY, EMGflappy.FirstObstaclePositionX, WorldWidth, EMGflappy.LoadGame);
 		Gdx.input.setInputProcessor(this);
-		time = System.nanoTime();
+		time = System.currentTimeMillis();
 		worldCounter = 1;
 		float flappyX = flappyWorld.getFlappyPositionX();
 		while(flappyX >= (float) (worldCounter * WorldWidth) - ViewPortSizeX) worldCounter++; // This is only needed when the world was loaded
@@ -135,7 +135,7 @@ public class EMGflappy extends Game implements InputProcessor {
 		flappyWorld = new FlappyWorld(ViewPortSizeX, ViewPortSizeY, EMGflappy.FirstObstaclePositionX, WorldWidth, false);
 		flappyWorld.extendWorld(WorldWidth, ViewPortSizeX, ViewPortSizeY);
 		backgroundSprites.clear();
-		time = System.nanoTime();
+		time = System.currentTimeMillis();
 		worldCounter = 1;
 		initBackground();
 	}
@@ -144,7 +144,7 @@ public class EMGflappy extends Game implements InputProcessor {
 	 * Finish game session
 	 */
 	public void finishGame() {
-		System.exit(0);
+		Gdx.app.exit();
 	}
 
 	/**
@@ -162,7 +162,7 @@ public class EMGflappy extends Game implements InputProcessor {
 	 */
 	@Override
 	public void resume() {
-		time = System.nanoTime();
+		time = System.currentTimeMillis();
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class EMGflappy extends Game implements InputProcessor {
 		for (Sprite sprite : backgroundSprites) {
 			sprite.draw(batch);
 		}
-		long timeNow = System.nanoTime();
-		float elapsedTime = ((float) (timeNow - time)) / 1000000000.f; // nanos to s
+		long timeNow = System.currentTimeMillis();
+		float elapsedTime = ((float) (timeNow - time)) / 1000.f; // millis to s
 		time = timeNow;
 		if (!ScreenManager.updatePhysics()) elapsedTime = 0.f;
 

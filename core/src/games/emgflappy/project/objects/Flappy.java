@@ -178,8 +178,8 @@ public class Flappy extends FlappyObject {
 
         // Cause damage if colliding
         if (colliding) {
-            if (ScreenManager.isPaused()) collisionTime = System.nanoTime(); // do not damage Flappy if the game is paused (this is approximately correct, it will reset current damage cycle)
-            float damageTime = (float) (System.nanoTime() - collisionTime) / 1000000000.f; // to s
+            if (ScreenManager.isPaused()) collisionTime = System.currentTimeMillis(); // do not damage Flappy if the game is paused (this is approximately correct, it will reset current damage cycle)
+            float damageTime = (float) (System.currentTimeMillis() - collisionTime) / 1000.f; // to s
             while (damageTime > Flappy.CollisionDamageInterval) {
                 damageFlappy();
                 damageTime -= Flappy.CollisionDamageInterval;
@@ -287,7 +287,7 @@ public class Flappy extends FlappyObject {
             hits++;
             if (animationTime >= Flappy.AnimationLength) animationTime = 0.f;
         }
-        collisionTime = System.nanoTime();
+        collisionTime = System.currentTimeMillis();
     }
 
     /**
