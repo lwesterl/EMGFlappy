@@ -123,6 +123,8 @@ public class EMGflappy extends Game implements InputProcessor {
 		if (EMGflappy.LoadGame) {
 			ScreenManager.showPauseScreen();
 			EMGflappy.LoadGame = false;
+		} else {
+			ScreenManager.showMenuScreen(false);
 		}
 	}
 

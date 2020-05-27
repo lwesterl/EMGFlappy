@@ -118,6 +118,32 @@ public final class ScreenManager {
     }
 
     /**
+     * Show Main menu
+     * @param resetGame Whether to reset the game (pass true when this is called from EndScreen)
+     */
+    public static void showMenuScreen(boolean resetGame) {
+        if (game != null) {
+            if (ScreenManager.screen != null) ScreenManager.screen.dispose();
+            ScreenManager.screen = new MenuScreen();
+            game.setScreen(ScreenManager.screen);
+            if (resetGame) game.restart();
+        }
+    }
+
+    /**
+     * Start game from the MenuScreen
+     */
+    public static void startGame() {
+        if (game != null) {
+            game.setInputFocus();
+            game.setScreen(null);
+            if (ScreenManager.screen != null) ScreenManager.screen.dispose();
+            ScreenManager.screen = null;
+            game.resume();
+        }
+    }
+
+    /**
      * Check whether to update physics or not in EMGflappy
      * @return true if physics need to be updated and false if only EMGflappy needs to be rendered
      */

@@ -76,7 +76,7 @@ public class EndScreen extends AbstractScreen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 super.clicked(event, x, y);
-                ScreenManager.quitGame();
+                ScreenManager.showMenuScreen(true);
             }
         });
 
